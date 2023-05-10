@@ -1,0 +1,17 @@
+.formulario {
+    margin: 100px auto;
+    border-radius: 20px !important;
+    padding: 20px;
+    background-color: brown !important;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: gray;
+    color: white;
+}

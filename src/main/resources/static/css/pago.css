@@ -1,0 +1,20 @@
+.controlador-formulario {
+    margin: 100px auto;
+}
+
+.formulario {
+    border-radius: 20px;
+    background-color: brown;
+    padding: 20px;
+}
+
+.pagar {
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.pagar:hover {
+    background-color: gray;
+    color: white;
+}

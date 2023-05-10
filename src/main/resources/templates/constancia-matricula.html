@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEPEN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/constancia.css}">
+    
+    
+    
+</head>
+<body>
+    <section th:replace="fragments/nav::nav">
+
+    </section>
+    <div class="contenedor-formulario container">
+        <form th:action="@{/constancia-matricula}" object="${estudiante}" method="get" enctype="multipart/form-data" class="formulario-matricula  form-control" id="formulario" >
+                <h2 class="text-center">Constancia de Matrícula</h2>
+                <p>Por medio de la presente se hace constar que el/la estudiante <input type="text" th:value="${estudiante.nombres}" id="Nombres"placeholder="Nombres" class="form-control-sm" readonly disable  name="nombres"> <input type="text" th:value="${estudiante.apellidos}" placeholder="Apellidos" class="form-control-sm" readonly id="apellidos" name="apellidos">, con número de identificación <input type="number" th:value="${estudiante.dni}" placeholder="Número de identificación del estudiante" class="form-control" readonly id="dni" name="dni">, ha sido admitido/a en el Instituto de Banca y Negocios CEPEN para el período académico correspondiente.</p>
+        
+                <p>El/la estudiante está oficialmente matriculado/a en el siguiente programa de estudios: [Nombre completo del programa de estudios] y está inscrito/a en la siguiente carrera:</p>
+                    
+                <input type="text" th:value="${matricula.carrera.carrera}" placeholder="Nombre de la carrera" class="form-control" readonly>
+        
+                <p>El/la estudiante ha cumplido con todos los requisitos de admisión y matrícula establecidos por el Instituto de Banca y Negocios y está autorizado/a a asistir a todas las clases y actividades del programa de estudios correspondiente.</p>
+                    
+                <p>Esta constancia se expide a solicitud del interesado/a para los fines que estime conveniente.</p>
+                    
+                <p>Atentamente,</p>
+                    
+                <p>A nombre de Freddy Vilcapoma Lizana</p>
+                <p>CEPEN</p>
+                <input type="date" th:value="${generarPago.fechaPago}"class="form-control" readonly>
+                <br>
+                <div class="container ">
+                    <a th:href="@{/index}">
+                        <p>Finalizar</p> <!--Falta aplicar estilos-->
+                    </a>
+                </div>  
+            </form>
+            <br>
+            <div class="container">
+                <div class="alert alert-danger">
+                    <p>No olvide sacar una captura de pantalla a la Constancia de Matrícula</p>
+                </div>
+            </div>
+
+            
+    </div>
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script th:src="@{/php/procesar.php}"></script>
+</body>
+</html>

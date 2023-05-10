@@ -1,0 +1,20 @@
+.contenedor-formulario {
+    margin: 100px auto;
+}
+
+.formulario-matricula {
+    background-color: brown;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.boton {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: gray;
+    color: white;
+}
