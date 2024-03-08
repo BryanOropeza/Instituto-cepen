@@ -22,9 +22,9 @@ Solución web diseñada para la completa gestión sobre los procesos de la matr�
 
 ## EJECUCIÓN DEL PROYECTO
 
-Importante: Proyecto Basado en Java Spring Boot JPA utilizando Vistas Thymleaf. Es necesario tener instalado [Java, ](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) configurar correctamente el framework [Spring](https://spring.io/projects/spring-boot) y [Mysql](https://www.mysql.com/)
+Importante: Proyecto Basado en Java Spring Boot JPA utilizando Vistas Thymleaf. Es necesario tener instalado [Java, ](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) configurar correctamente el framework [Spring](https://spring.io/projects/spring-boot) y [Mysql](https://www.mysql.com/).
+Tengamos en cuenta que nuestros procesos de Mysql deberán estar en funcionamiento antes de ejecutar el programa.
 
-### Ejecución:
 1. Clonamos o descargarmos el repositorio
 2. Modificamos las líneas de código "spring.datasource.username" y "spring.datasource.password" con las credenciales de nuestro MySQL
 3. Creamos una base de datos llamada "db_cepen"
